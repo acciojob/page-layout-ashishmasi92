@@ -2,16 +2,16 @@
 import React from "react";
 import './../styles/App.css';
 
-const App = (props) => {
+const App = ({header,children,footer}) => {
   return (
     <div>
         {/* Do not remove the main div */}
         <header>
-<h1>{props.head}</h1>
-        <p>{props.para}</p>
+<h1>{header}</h1>
+        <p>{children}</p>
         </header>
         <footer>
-          <p>{props.foot}</p>
+          <p>{footer}</p>
         </footer>
     </div>
   )
