@@ -6,13 +6,9 @@ const App = ({header,children,footer}) => {
   return (
     <div>
         {/* Do not remove the main div */}
-        <header>
-<h1>{header}</h1>
-        <p>{children}</p>
-        </header>
-        <footer>
-          <p>{footer}</p>
-        </footer>
+        <h1>{header}</h1>
+<h2>{children}</h2>
+<h3>{footer}</h3>
     </div>
   )
 }
