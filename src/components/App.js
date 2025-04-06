@@ -4,12 +4,19 @@ import './../styles/App.css';
 
 const App = ({header,children,footer}) => {
   return (
-    <div>
-        {/* Do not remove the main div */}
-        <h1>{header}</h1>
-<h2>{children}</h2>
-<h3>{footer}</h3>
-    </div>
+    <div className="page-layout">
+    <header className="page-header">
+      {header}
+    </header>
+    
+    <main className="page-content">
+      {children}
+    </main>
+    
+    <footer className="page-footer">
+      {footer}
+    </footer>
+  </div>
   )
 }
 
